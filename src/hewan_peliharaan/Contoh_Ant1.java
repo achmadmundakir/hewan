@@ -1,3 +1,8 @@
+package hewan_peliharaan;
+
+
+import javax.lang.model.SourceVersion;
+
 class Hewan {
     String jenis;
     String jumlahkaki;
@@ -22,6 +27,10 @@ class Hewan {
 
     String sayHello(String pesan){
         return "Halo, " + this.jenis + "! " + pesan;
+    }
+
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.latest();
     }
 }
 
